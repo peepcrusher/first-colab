@@ -17,21 +17,22 @@
 <nav class="navbar navbar-primary bg-primary">
         <a class="navbar-brand mx-auto" href="#">
           <img src="assets/images/newspaper-icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
-          New York Times Search
+          <h3 class = "float-right">New York Times Search</h3>
         </a>
       </nav>
 
 
-      <form>
+      <form class = "border">
             <div class="form-group border">
-                <div class="bg-light">
+                <div class="bg-light p-1">
                 <p><strong>Search Parameters</strong></p>
                 <hr>
                 </div>
+                <div class="p-2">
               <label  for="exampleFormControlInput1">Search Term</label>
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
             </div>
-            <div class="form-group">
+            <div class="form-group p-2">
               <label for="exampleFormControlSelect1">Number of records to Retrieve:</label>
               <select class="form-control" id="exampleFormControlSelect1">
                 <option>1</option>
@@ -39,28 +40,34 @@
                 <option>10</option>
               </select>
             </div>
-            <div class="form-group">
+            <div class="form-group p-2">
                     <label  for="exampleFormControlInput1">Start Year (Optional)</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
             </div>
-            <div class="form-group">
+            <div class="form-group p-2">
                     <label  for="exampleFormControlInput1">End year (Optional</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <button type="button" class="btn btn-link">Clear</button>
+            <button type="submit" class="btn btn-primary p-2">Submit</button>
+            <button type="button" class="btn btn-link p-2">Clear</button>
           </form>
           <br><br>
 
 
           
-        
+          <p><strong>Top Articles</strong></p>
+          <hr>
     
           <div class="articles-go-here">
-                <p><strong>Top Articles</strong></p>
-                <hr>
+                
           </div>
           </div>
+
+          <footer>
+            <div class="container text-center">
+                Made with lots and lots of &hearts;
+            </div>
+        </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
