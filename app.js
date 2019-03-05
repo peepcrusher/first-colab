@@ -6,7 +6,7 @@ $(document).submit(function () {
 
    
     //console.log(searchInfo); 
-    var searchArticle = $("#showSearch");
+    var searchArticle = $("#showSearch").val();
     console.log(searchArticle);
     
     var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + searchArticle + "&api-key=jFgmUYN77x9HAEqWVGGa2RhxF1GEZEHG&limit=5";
@@ -20,7 +20,7 @@ $(document).submit(function () {
          var apiresponse = response.response.docs;
 
         console.log(response);
-console.log(apiresponse);
+        console.log(apiresponse);
         for (i = 0; i < apiresponse.length; i++) {
 
         
@@ -35,11 +35,13 @@ console.log(apiresponse);
         console.log(url);
 
 
+        $(".shows").append ("<div><h2>" + headline+ "</h2></div>"); 
+        $(".shows").append ("<div><p>" + author+ "</p></div>"); 
+        $(".shows").append ("<div><p>" + date + "</p></div>"); 
+        $(".shows").append ("<div><p>" + url + "</p></div>"); 
         
 }
 
-$
-       //$(".shows").append (response.docs[0].headline.main ); 
         
 
 
